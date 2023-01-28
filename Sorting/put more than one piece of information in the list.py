@@ -7,6 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1sXCo8Qc6mVlHD0ShtwFqjbyyNEWZ5lu2
 """
 
+# 출처: https://school.programmers.co.kr/learn/courses/30/lessons/42889
+# 문제 설명: 어떤 플레이어가 현재 도달한 stage가 주어질 때, 각 stage 별로 실패율을 구해
+# 그 값이 높은 stage부터 차례로 출력
+
 def solution(N, stages):
     answer = []
     length = len(stages)
