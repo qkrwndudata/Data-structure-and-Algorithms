@@ -7,13 +7,18 @@ Original file is located at
     https://colab.research.google.com/drive/17-cxtoTzbxm75TTbfivxVr61oRDD5e_U
 """
 
+# Amazon 인터뷰 기출: 고정점 찾기
+
+# 고정점: 수열의 원소 중 인덱스와 동일한 원소
+# 재귀함수 사용
+
 n = int(input())
 array = list(map(int, input().split()))
 
 answer = -1
 
 def binary_search(array, start, end):
-    if start > end:
+    if start > end:  
         return None
     mid = (start + end) // 2
     if array[mid] == mid:
