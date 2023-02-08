@@ -8,6 +8,6 @@ Original file is located at
 """
 
 def sequential_search(n, target, array):
-		for i in range(n):
+	for i in range(n):
 		if array[i] == target:
-				return i + 1
+			return i + 1
