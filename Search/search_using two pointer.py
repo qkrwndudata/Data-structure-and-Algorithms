@@ -7,12 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/17-cxtoTzbxm75TTbfivxVr61oRDD5e_U
 """
 
+# 167. Two Sum II - Input Array Is Sorted
+# https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
 def twoSum(self, numbers, target):
-		left, right = 0, len(numbers)-1
-		while not left == right:
-				if numbers[left] + numbers[right] < target:
-						left += 1
-				elif numbers[left] + numbers[right] > target:
-						right -= 1
-				else:
-						return left+1, right+1
+	left, right = 0, len(numbers)-1   # left는 왼쪽부터 right는 오른쪽부터 이동
+	while not left == right:
+		if numbers[left] + numbers[right] < target:
+			left += 1
+		elif numbers[left] + numbers[right] > target:
+			right -= 1
+		else:
+			return left+1, right+1
