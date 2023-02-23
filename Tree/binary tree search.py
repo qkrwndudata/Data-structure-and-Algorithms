@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1xB6lvJSYYwRRk_CjotLfTv8N-QcmaYFB
 """
 
+# 링크: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         if not nums:
